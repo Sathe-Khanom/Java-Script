@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<label for="">Number1</label> <br>
+<input type="text" id="number1"> <br>
+<label for="">Number2</label> <br>
+<input type="text" id="number2"> <br> <br>
+<input type="button" value="find the max " onclick="sum()"> <br>
+<input type="text" id="result">
+
+<script>
+        // <--check even or odd number-->
+// let input=prompt("Enter a number to check Odd or Even");
+
+
+// // if(input % 2==0){
+// //     document.write(input+"This is a even number");
+// //     alert(input+"This is a even number");
+
+// // }
+// // else{
+// //     document.write(input,"This is a odd number");
+// //     alert(input,"This is a odd number");
+
+
+// }
+
+// if(!(input % 2==0)){
+//     document.write(input+"This is a odd number");
+//     // alert(input+"This is a odd number");
+
+// }
+// else{
+//     document.write(input,"This is a even number");
+//     // alert(input,"This is a even number");
+
+// }
+
+
+
+//     let number1=prompt("Enter a number to check max or min");
+// let number2=prompt("Enter a number to check max or min");
+
+// if(number1>number2){
+//    document.write(number1+ "this is the largest number")
+
+
+
+// }
+// else{
+//     document.write(number2+ "this is the largest number")
+
+
+
+
+
+
+
+
+
+
+
+
+// }
+// <--use of parseInt-->
+// let number1=parseInt(prompt("Enter a number to check max or min"));
+// let number2=parseInt(prompt("Enter a number to check max or min"));
+// let number3=parseInt(prompt("Enter a number to check max or min"));
+
+// if(number1>number2 && number1>number3 ){
+//    document.write(number1+ "this is the largest number");
+
+
+
+// }
+// else if (number2>number1 && number2>number3){
+//     document.write(number2+ "this is the largest number");   
+// }
+// else{
+//     document.write(number3+ "this is the largest number");
+
+
+
+
+
+// }
+
+
+// <--find max number-->
+// let number1="Number1"
+// let number2="Number2"
+
+
+// if(number1>number2){
+//     document.write(number1 +"max")
+
+// }
+// else{
+//     document.write(number2 +"max")
+
+// }
+
+
+function sum() {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+
+           if(number1>=number2){
+document.getElementById("result").value=""+number1;
+
+
+           } 
+           else{
+            document.getElementById("result").value=""+number2;
+
+           }
+
+            
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
