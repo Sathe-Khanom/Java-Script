@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Student Name</label> <br>
+    <input type="text" id="name"> <br>
+    <label for="">Password</label> <br>
+    <input type="password" id="pass"> <br>
+    <span id="message"></span> <br>
+    <input type="button" onclick="myform()" value="submit">
+
+    <script>
+
+        function myform() {
+            let pass = document.getElementById('pass').value;
+            // let pattern = /^[a-zA-Z0-9]$/;
+            let pattern = /^\S$/;
+
+            if (pattern.test(pass)) {
+console.log("yes");
+                // document.getElementById('message').innerHTML = "<span style='color:green;'>Password is correct</span><br>";
+
+
+            }
+            else {
+                // document.getElementById('message').innerHTML = "<span style='color:green;'>Password is incorrect</span> <br>";
+                console.log("no");
+            }
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
