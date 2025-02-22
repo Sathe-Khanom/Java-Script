@@ -10,6 +10,7 @@ let gender = document.querySelector('input[name="gender"]:checked');
 let course = document.querySelectorAll('input[name="course"]:checked');
 let location = document.getElementById('location').value;
 
+<<<<<<< HEAD
 
 let courseValue =[];
 for (let i= 0; i<course.length; i++){
@@ -30,6 +31,13 @@ newWindow.document.write("<pre>"+ output +"</pre>");
 
 let myform = document.getElementById('myform');
 myform.addEventListener('submit',dataSend);
+=======
+let hobbyValue= [];
+
+for(let i=0; i<hobby.length, i++){
+hobbyValue.push()
+}
+>>>>>>> d510a15baf5fd6168afa6b4572483c5b47e3cb09
 
 
 
